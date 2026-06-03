@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BoostLab SMM Panel</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:#0f172a;
+color:#fff;
+}
+
+header{
+background:#111827;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#3b82f6;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-size:16px;
+transition:.3s;
+}
+
+nav a:hover{
+color:#3b82f6;
+}
+
+.hero{
+min-height:90vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+background:linear-gradient(rgba(15,23,42,.9),rgba(15,23,42,.9)),
+url('https://images.unsplash.com/photo-1460925895917-afdab827c52f');
+background-size:cover;
+background-position:center;
+}
+
+.hero-content h1{
+font-size:55px;
+margin-bottom:15px;
+}
+
+.hero-content p{
+font-size:20px;
+color:#cbd5e1;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 28px;
+background:#3b82f6;
+color:white;
+text-decoration:none;
+border-radius:8px;
+margin:5px;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+background:#2563eb;
+}
+
+.btn2{
+display:inline-block;
+padding:14px 28px;
+background:transparent;
+border:2px solid #3b82f6;
+color:white;
+text-decoration:none;
+border-radius:8px;
+margin:5px;
+}
+
+.btn2:hover{
+background:#3b82f6;
+}
+
+.section-title{
+text-align:center;
+font-size:36px;
+margin-bottom:40px;
+}
+
+.features{
+padding:80px 8%;
+}
+
+.feature-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.feature{
+background:#1e293b;
+padding:25px;
+border-radius:15px;
+text-align:center;
+}
+
+.feature h3{
+margin-top:10px;
+margin-bottom:10px;
+}
+
+.services{
+padding:80px 8%;
+background:#111827;
+}
+
+.service-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.card{
+background:#1e293b;
+padding:25px;
+border-radius:15px;
+}
+
+.card h3{
+margin-bottom:15px;
+color:#3b82f6;
+}
+
+.card ul{
+list-style:none;
+}
+
+.card ul li{
+padding:8px 0;
+border-bottom:1px solid #334155;
+}
+
+.center{
+text-align:center;
+margin-top:40px;
+}
+
+footer{
+background:#020617;
+padding:30px;
+text-align:center;
+margin-top:60px;
+color:#94a3b8;
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+}
+
+nav{
+margin-top:15px;
+}
+
+.hero-content h1{
+font-size:38px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+🚀 BoostLab
+</div>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="services.html">Services</a>
+<a href="order.html">Order Now</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Pakistan's Trusted SMM Panel</h1>
+
+<p>
+Instagram • TikTok • Facebook • YouTube Growth Services
+</p>
+
+<a href="order.html" class="btn">
+Place Order
+</a>
+
+<a href="services.html" class="btn2">
+View Services
+</a>
+
+</div>
+
+</section>
+
+<section class="features">
+
+<h2 class="section-title">
+Why Choose Us?
+</h2>
+
+<div class="feature-grid">
+
+<div class="feature">
+<h3>⚡ Instant Delivery</h3>
+<p>Fast and reliable order processing.</p>
+</div>
+
+<div class="feature">
+<h3>🛡 Secure Orders</h3>
+<p>Your orders are completely secure.</p>
+</div>
+
+<div class="feature">
+<h3>💬 24/7 Support</h3>
+<p>Always available on WhatsApp.</p>
+</div>
+
+<div class="feature">
+<h3>💰 Best Prices</h3>
+<p>Affordable rates for every service.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="services">
+
+<h2 class="section-title">
+Popular Services
+</h2>
+
+<div class="service-grid">
+
+<div class="card">
+<h3>Instagram</h3>
+<ul>
+<li>1K Followers - Rs.800</li>
+<li>1K Likes - Rs.80</li>
+<li>10K Views - Rs.300</li>
+<li>10K Followers - Rs.1500</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>TikTok</h3>
+<ul>
+<li>1K Followers - Rs.400</li>
+<li>1K Likes - Rs.150</li>
+<li>10K Views - Rs.100</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Facebook</h3>
+<ul>
+<li>1K Followers - Rs.500</li>
+<li>1K Likes - Rs.200</li>
+<li>1K Views - Rs.100</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>YouTube</h3>
+<ul>
+<li>100 Subscribers - Rs.200</li>
+<li>1K Subscribers - Rs.1800</li>
+<li>10K Views - Rs.1000</li>
+<li>4000 Watch Hours - Rs.2500</li>
+</ul>
+</div>
+
+</div>
+
+<div class="center">
+
+<a href="services.html" class="btn">
+See All Services
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+© 2026 BoostLab SMM Panel
+</p>
+
+<p>
+WhatsApp Support Available 24/7
+</p>
+
+</footer>
+
+</body>
+</html>
