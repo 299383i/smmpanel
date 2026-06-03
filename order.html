@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Order Now - BoostLab</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,sans-serif;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+header{
+background:#111827;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#3b82f6;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+}
+
+.container{
+max-width:700px;
+margin:50px auto;
+background:#1e293b;
+padding:30px;
+border-radius:15px;
+}
+
+h1{
+text-align:center;
+margin-bottom:25px;
+}
+
+input,select,textarea{
+width:100%;
+padding:14px;
+margin-bottom:15px;
+border:none;
+border-radius:8px;
+background:#334155;
+color:white;
+}
+
+button{
+width:100%;
+padding:15px;
+background:#3b82f6;
+color:white;
+border:none;
+border-radius:8px;
+font-size:18px;
+cursor:pointer;
+}
+
+button:hover{
+background:#2563eb;
+}
+
+footer{
+text-align:center;
+padding:25px;
+margin-top:40px;
+background:#020617;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+
+<div class="logo">🚀 BoostLab</div>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="services.html">Services</a>
+<a href="order.html">Order</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+</header>
+
+<div class="container">
+
+<h1>Place Your Order</h1>
+
+<form id="orderForm">
+
+<input type="text" id="name" placeholder="Your Name" required>
+
+<input type="text" id="link" placeholder="Profile / Post Link" required>
+
+<select id="service" required>
+<option value="">Select Service</option>
+<option>Instagram Followers</option>
+<option>Instagram Likes</option>
+<option>TikTok Followers</option>
+<option>TikTok Likes</option>
+<option>YouTube Subscribers</option>
+<option>YouTube Views</option>
+<option>Facebook Followers</option>
+<option>Telegram Members</option>
+</select>
+
+<input type="number" id="quantity" placeholder="Quantity" required>
+
+<input type="text" id="whatsapp" placeholder="Your WhatsApp Number">
+
+<textarea id="note" rows="4" placeholder="Extra Details"></textarea>
+
+<button type="submit">Send Order</button>
+
+</form>
+
+</div>
+
+<footer>
+© 2026 BoostLab SMM Panel
+</footer>
+
+<script>
+
+document.getElementById("orderForm").addEventListener("submit", function(e){
+
+e.preventDefault();
+
+let name=document.getElementById("name").value;
+let link=document.getElementById("link").value;
+let service=document.getElementById("service").value;
+let quantity=document.getElementById("quantity").value;
+let whatsapp=document.getElementById("whatsapp").value;
+let note=document.getElementById("note").value;
+
+let msg=
+`🚀 NEW ORDER
+
+Name: ${name}
+
+Service: ${service}
+
+Quantity: ${quantity}
+
+Link: ${link}
+
+WhatsApp: ${whatsapp}
+
+Note: ${note}`;
+
+window.open(
+`https://wa.me/923001234567?text=${encodeURIComponent(msg)}`,
+'_blank'
+);
+
+});
+
+</script>
+
+</body>
+</html>
