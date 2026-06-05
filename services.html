@@ -1,17 +1,16 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Services | YASH DIGITAL AGENCY</title>
+<title>Services - YASH DIGITAL AGENCY</title>
 
 <style>
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:'Segoe UI',sans-serif;
+font-family:Arial,sans-serif;
 }
 
 body{
@@ -21,104 +20,83 @@ color:white;
 
 header{
 background:#111827;
-padding:18px 8%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-}
-
-.logo{
-font-size:28px;
-font-weight:800;
-color:#60a5fa;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin-left:20px;
-}
-
-.hero{
+padding:20px;
 text-align:center;
-padding:80px 20px;
-background:linear-gradient(135deg,#2563eb,#0f172a);
 }
 
-.hero h1{
-font-size:50px;
-margin-bottom:15px;
+header h1{
+color:#00e5ff;
 }
 
-.hero p{
-font-size:20px;
-color:#e2e8f0;
+header p{
+color:#cbd5e1;
+margin-top:5px;
 }
 
 .services{
-padding:70px 8%;
+padding:50px 20px;
 }
 
-.service-grid{
+.section-title{
+text-align:center;
+font-size:36px;
+margin-bottom:30px;
+color:#00e5ff;
+}
+
+.services-grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 gap:20px;
+max-width:1200px;
+margin:auto;
 }
 
-.service{
-background:#1e293b;
+.service-card{
+background:#111827;
 padding:25px;
 border-radius:15px;
 text-align:center;
 transition:.3s;
+box-shadow:0 0 15px rgba(0,229,255,.15);
 }
 
-.service:hover{
-transform:translateY(-5px);
+.service-card:hover{
+transform:translateY(-8px);
 }
 
-.service h3{
+.service-card h3{
+color:#00e5ff;
 margin-bottom:10px;
-color:#60a5fa;
 }
 
-.service p{
-margin-bottom:15px;
+.service-card p{
 color:#cbd5e1;
+margin:10px 0;
+}
+
+.price{
+font-size:24px;
+font-weight:bold;
+color:#00ff88;
+margin:15px 0;
 }
 
 .btn{
 display:inline-block;
-padding:10px 20px;
-background:#10b981;
-color:white;
+background:#00e5ff;
+color:black;
+padding:12px 24px;
+border-radius:30px;
 text-decoration:none;
-border-radius:8px;
 font-weight:bold;
 }
 
 footer{
-background:#020617;
-padding:25px;
+background:#111827;
+padding:20px;
 text-align:center;
-color:#94a3b8;
-margin-top:50px;
-}
-
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-width:60px;
-height:60px;
-background:#25D366;
-border-radius:50%;
-display:flex;
-justify-content:center;
-align-items:center;
-font-size:30px;
-text-decoration:none;
-color:white;
+margin-top:40px;
 }
 </style>
 </head>
@@ -126,143 +104,128 @@ color:white;
 <body>
 
 <header>
-<div class="logo">YASH DIGITAL AGENCY</div>
-
-<nav>
-<a href="index.html">Home</a>
-<a href="services.html">Services</a>
-<a href="contact.html">Contact</a>
-</nav>
+<h1>YASH DIGITAL AGENCY</h1>
+<p>Your Agency for Social & Hypergrowth</p>
 </header>
-
-<section class="hero">
-<h1>Our Services</h1>
-<p>Premium Social Media Growth Solutions</p>
-</section>
 
 <section class="services">
 
-<div class="service-grid">
+<h2 class="section-title">Our Services</h2>
 
-<div class="service">
+<div class="services-grid">
+
+<div class="service-card">
 <h3>Instagram Followers</h3>
-<p>High quality followers.</p>
-<a class="btn" href="https://wa.me/923348101110">Order Now</a>
+<p>1000 Followers</p>
+<div class="price">Rs.700</div>
+<a href="https://wa.me/923348101110" class="btn">Order Now</a>
 </div>
 
-<div class="service">
+<div class="service-card">
 <h3>Instagram Likes</h3>
-<p>Increase engagement.</p>
-<a class="btn" href="https://wa.me/923348101110">Order Now</a>
+<p>1000 Likes</p>
+<div class="price">Rs.50</div>
+<a href="https://wa.me/923348101110" class="btn">Order Now</a>
 </div>
 
-<div class="service">
+<div class="service-card">
 <h3>Instagram Views</h3>
-<p>Boost video reach.</p>
-<a class="btn" href="https://wa.me/923348101110">Order Now</a>
+<p>10,000 Views</p>
+<div class="price">Rs.200</div>
+<a href="https://wa.me/923348101110" class="btn">Order Now</a>
 </div>
 
-<div class="service">
-<h3>Facebook Followers</h3>
-<p>Grow your page audience.</p>
-<a class="btn" href="https://wa.me/923348101110">Order Now</a>
+<div class="service-card">
+<h3>Instagram 10K Followers</h3>
+<p>10,000 Followers</p>
+<div class="price">Rs.1400</div>
+<a href="https://wa.me/923348101110" class="btn">Order Now</a>
 </div>
 
-<div class="service">
-<h3>Facebook Likes</h3>
-<p>Improve page authority.</p>
-<a class="btn" href="https://wa.me/923348101110">Order Now</a>
-</div>
-
-<div class="service">
+<div class="service-card">
 <h3>TikTok Followers</h3>
-<p>Grow your TikTok account.</p>
-<a class="btn" href="https://wa.me/923348101110">Order Now</a>
+<p>1000 Followers</p>
+<div class="price">Rs.300</div>
+<a href="https://wa.me/923348101110" class="btn">Order Now</a>
 </div>
 
-<div class="service">
+<div class="service-card">
 <h3>TikTok Likes</h3>
-<p>Increase engagement.</p>
-<a class="btn" href="https://wa.me/923348101110">Order Now</a>
+<p>1000 Likes</p>
+<div class="price">Rs.50</div>
+<a href="https://wa.me/923348101110" class="btn">Order Now</a>
 </div>
 
-<div class="service">
+<div class="service-card">
 <h3>TikTok Views</h3>
-<p>Reach more viewers.</p>
-<a class="btn" href="https://wa.me/923348101110">Order Now</a>
+<p>10,000 Views</p>
+<div class="price">Rs.50</div>
+<a href="https://wa.me/923348101110" class="btn">Order Now</a>
 </div>
 
-<div class="service">
+<div class="service-card">
+<h3>Facebook Followers</h3>
+<p>1000 Followers</p>
+<div class="price">Rs.400</div>
+<a href="https://wa.me/923348101110" class="btn">Order Now</a>
+</div>
+
+<div class="service-card">
+<h3>Facebook Likes</h3>
+<p>1000 Likes</p>
+<div class="price">Rs.100</div>
+<a href="https://wa.me/923348101110" class="btn">Order Now</a>
+</div>
+
+<div class="service-card">
+<h3>Facebook Views</h3>
+<p>1000 Views</p>
+<div class="price">Rs.50</div>
+<a href="https://wa.me/923348101110" class="btn">Order Now</a>
+</div>
+
+<div class="service-card">
+<h3>Facebook Reactions + Comments</h3>
+<p>60 Reactions + Comments</p>
+<div class="price">Rs.1100</div>
+<a href="https://wa.me/923348101110" class="btn">Order Now</a>
+</div>
+
+<div class="service-card">
 <h3>YouTube Subscribers</h3>
-<p>Grow your channel.</p>
-<a class="btn" href="https://wa.me/923348101110">Order Now</a>
+<p>100 Subscribers</p>
+<div class="price">Rs.100</div>
+<a href="https://wa.me/923348101110" class="btn">Order Now</a>
 </div>
 
-<div class="service">
+<div class="service-card">
+<h3>YouTube Subscribers Pro</h3>
+<p>1000 Subscribers</p>
+<div class="price">Rs.1700</div>
+<a href="https://wa.me/923348101110" class="btn">Order Now</a>
+</div>
+
+<div class="service-card">
 <h3>YouTube Views</h3>
-<p>Increase watch count.</p>
-<a class="btn" href="https://wa.me/923348101110">Order Now</a>
+<p>10,000 Views</p>
+<div class="price">Rs.900</div>
+<a href="https://wa.me/923348101110" class="btn">Order Now</a>
 </div>
 
-<div class="service">
-<h3>YouTube Likes</h3>
-<p>Boost engagement.</p>
-<a class="btn" href="https://wa.me/923348101110">Order Now</a>
-</div>
-
-<div class="service">
-<h3>Telegram Members</h3>
-<p>Grow groups and channels.</p>
-<a class="btn" href="https://wa.me/923348101110">Order Now</a>
-</div>
-
-<div class="service">
-<h3>Telegram Views</h3>
-<p>Increase post reach.</p>
-<a class="btn" href="https://wa.me/923348101110">Order Now</a>
-</div>
-
-<div class="service">
-<h3>Twitter/X Followers</h3>
-<p>Expand your audience.</p>
-<a class="btn" href="https://wa.me/923348101110">Order Now</a>
-</div>
-
-<div class="service">
-<h3>Twitter/X Likes</h3>
-<p>Boost interactions.</p>
-<a class="btn" href="https://wa.me/923348101110">Order Now</a>
-</div>
-
-<div class="service">
-<h3>Spotify Plays</h3>
-<p>Increase music streams.</p>
-<a class="btn" href="https://wa.me/923348101110">Order Now</a>
-</div>
-
-<div class="service">
-<h3>Spotify Followers</h3>
-<p>Grow artist profile.</p>
-<a class="btn" href="https://wa.me/923348101110">Order Now</a>
-</div>
-
-<div class="service">
-<h3>Website Traffic</h3>
-<p>Real website visitors.</p>
-<a class="btn" href="https://wa.me/923348101110">Order Now</a>
+<div class="service-card">
+<h3>4000 Watch Hours</h3>
+<p>YouTube Monetization</p>
+<div class="price">Rs.2400</div>
+<a href="https://wa.me/923348101110" class="btn">Order Now</a>
 </div>
 
 </div>
-
 </section>
 
 <footer>
+<p>WhatsApp Orders: +92 334 8101110</p>
 <p>© 2026 YASH DIGITAL AGENCY</p>
-<p>Your Agency For Social Hypergrowth</p>
 </footer>
 
-<a href="https://wa.me/923348101110" class="whatsapp">💬</a>
-
 </body>
-</html>
-```
+  </html>
